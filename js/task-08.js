@@ -7,7 +7,7 @@ function handleSubmit(event) {
   const formData = new FormData(event.target);
 
   for (const value of formData.values()) {
-    if (value === '') alert('Please fill all fields');
+    if (value === '') return alert('Please fill all fields');
   }
 
   const formDataObj = {
